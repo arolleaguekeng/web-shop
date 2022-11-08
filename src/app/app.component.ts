@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'web-shop';
+  url:string = "../assets/img/img1.png";
+
+  constructor(){}
+  changeImage(event: any){
+    this.url = event.target.src;
+    console.log(event.target.src);
+  }
 }
