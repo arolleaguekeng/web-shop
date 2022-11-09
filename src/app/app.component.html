@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
 <section class="bg-color">
   <div class="containers">
     <div class="title">
@@ -8,41 +7,64 @@
     </div>
     <div class="row">
       <div class="col-md-3">
-        <div class="card">
-          <div class="card-main">
-            <div class="discount">9%</div>
-            <div class="label label-green">Pre-Order</div>
-            <div class="product-container">
-              <div class="p "(mouseover)="changeImage($event)"><img src="../assets/img/img1.png" alt="Product"></div>
-              <div class="p" (mouseover)="changeImage($event)"><img src="../assets/img/img2.png" alt="Product"></div>
-              <div class="p" (mouseover)="changeImage($event)"><img src="../assets/img/img3.png" alt="Product"></div>
+        <app-item-card></app-item-card>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="policy">
+  <div class="containers text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="policy-card">
+          <div class="round">
+            <div class="round-icon">
+              <i class="fa fa-car"></i>
             </div>
-            <div class="image">
-              <img src="{{url}}" alt="Image">
-            </div>
-            <div class="cart-line"></div>
-            <div class="cart-item">
-              <ul>
-                <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
-                <li><a href=""><i class="fa fa-heart"></i></a></li>
-                <li><a href=""><i class="fa fa-search"></i></a></li>
-              </ul>            
-            </div>            
+            
           </div>
-          <div class="content">
-            <a href="">Incidid Tongue Bar</a>
-            <div class="rating">
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <p>
-              <span class="money">$81.00</span> <span class="old-price">$80 00</span>
-            </p>
-          </div>
+          <h2>Free Shipping &amp; Return </h2>
+          <p>Free shipping on all UK order</p>
         </div>
+      </div>
+      <div class="col-md-4">
+        <div class="policy-card">
+          <div class="round">
+            <div class="round-icon">
+              <i class="fa fa-refresh"></i>
+            </div>
+          </div>
+          <h2> Money Back Guarentee </h2>
+          <p>30 days money back guarentee </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="policy-card">
+          <div class="round">
+            <div class="round-icon">
+              <i class="fa fa-phone"></i>
+            </div>
+          </div>
+          <h2> Online Support 24/24 </h2>
+          <p> We support online 24/24 on day </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="policy-product">
+  <div class="containers">
+    <div class="row">
+      <div class="col-md-4">
+        <app-policy-product></app-policy-product>
+      </div>
+      <div class="col-md-4">
+        <app-policy-product></app-policy-product>
+      </div>
+      <div class="col-md-4">
+        <app-policy-product></app-policy-product>
       </div>
     </div>
   </div>
